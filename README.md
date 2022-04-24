@@ -1,4 +1,6 @@
-# Telegram Bot
+# Telegram Bot 
+
+[Read this in English](https://github.com/RDonii/EnglishHelper#english)
 ## Uzbek
 ### Umumiy ma'lumot
 Foydalanuvchi yuborgan matinni ingliz tilidan o'zbek tiliga yoki o'zbek tilidan ingliz tiliga tarjima qilib beradi. Agarda bitta ingliz tilida so'z yuborilsa shu so'zning to'liq ta'rifi va uni talaffuz qilinishlari haqida ma'lumot beradi.
@@ -18,6 +20,7 @@ Python tilining yangi versiyalaridan birini o'rnatib bo'lgach, `pip install -r r
 So'ngra, `python app.py` orqali bot ishga tushiriladi.
 
 ## English
+[O'zbek tilida o'qish](https://github.com/RDonii/EnglishHelper#uzbek)
 ### General information
 Translates the submitted text from English into Uzbek or from Uzbek into English. If a word is sent in English, it gives a complete definition of the word and how it is pronounced.
 
