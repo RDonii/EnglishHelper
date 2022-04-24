@@ -19,19 +19,22 @@ def getDefinitions(word_id: str):
             'definitions': [],
             'audios': []
         }
-        for lexicalEntry in result['lexicalEntries']:
-            for entry in lexicalEntry['entries']:
-
-                for sense in entry['senses']:
-                    for definition in sense['definitions']:
-                        primary_data['definitions'].append(f'🔸{definition}')
-                
-                for pronunciation in entry['pronunciations']:
-                    if 'audioFile' in pronunciation.keys():
-                        if pronunciation['audioFile'] not in primary_data['audios']: #lexicalEntry ko'p bo'lganda audio lar takrorlanar ekan, bizda takrorlanishi oldini olindi
-                            primary_data['audios'].append(pronunciation['audioFile'])
-        
-        data.append(primary_data)
+        if 'lexicalEntries' in result.keys():
+            for lexicalEntry in result['lexicalEntries']:
+                if 'entries' in lexicalEntry.keys():
+                    for entry in lexicalEntry['entries']:
+                        if 'senses' in entry.keys():
+                            for sense in entry['senses']:
+                                if 'definitions' in sense.keys():
+                                    for definition in sense['definitions']:
+                                        primary_data['definitions'].append(f'🔸{definition}')
+                                if 'pronunciations' in entry.keys():
+                                    for pronunciation in entry['pronunciations']:
+                                        if 'audioFile' in pronunciation.keys():
+                                            if pronunciation['audioFile'] not in primary_data['audios']: #lexicalEntry ko'p bo'lganda audio lar takrorlanar ekan, bizda takrorlanishi oldini olindi
+                                                primary_data['audios'].append(pronunciation['audioFile'])
+        if len(primary_data['definitions'])>0 or len(primary_data['audios'])>0:
+            data.append(primary_data)
     
     return data
 
