@@ -6,7 +6,7 @@
 Foydalanuvchi yuborgan matinni ingliz tilidan o'zbek tiliga yoki o'zbek tilidan ingliz tiliga tarjima qilib beradi. Agarda bitta ingliz tilida so'z yuborilsa shu so'zning to'liq ta'rifi va uni talaffuz qilinishlari haqida ma'lumot beradi.
 
 ### Ishga tushirish
-Botni ishga tushirish uchun sizga peveloper.oxforddictionaries.com saytidan, @BotFather va @userinfobot telegram botidan olingan quyidagi mahfiy qiymatlar kerak bo'ladi. .env faylini yaratib, jadvaldagi nomlar bilan saqlab qo'yish lozim.
+Botni ishga tushirish uchun sizga developer.oxforddictionaries.com saytidan, @BotFather va @userinfobot telegram botidan olingan quyidagi mahfiy qiymatlar kerak bo'ladi. .env faylini yaratib, jadvaldagi nomlar bilan saqlab qo'yish lozim.
 
 | Nomi  | Qayerdan | .env nomi |
 | ------------- | ------------- | ------------- |
